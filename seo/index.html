@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Laboratório interativo de SEO para explorar descoberta, intenção e otimização." />
+    <title>SEO Lab — Barão de Mauá</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="SEO Lab, início">
+        <span class="brand-mark">S</span>
+        <span>SEO <strong>LAB</strong></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#trilha">Trilha</a>
+        <a href="#desafio">Desafio</a>
+      </nav>
+      <button class="progress-button" id="jump-to-challenge">Ir para o desafio <span>→</span></button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Pós-graduação em Marketing Digital · Barão de Mauá</p>
+          <h1>Aprenda SEO<br /><em>fazendo escolhas.</em></h1>
+          <p class="hero-text">Uma aula prática sobre descoberta digital: do rastreamento à intenção de busca, passando por decisões que afetam pessoas e negócios.</p>
+          <label class="name-field" for="student-name">Como seu nome aparece no relatório?
+            <input id="student-name" type="text" maxlength="42" placeholder="Digite seu nome" autocomplete="name" />
+          </label>
+          <div class="hero-actions">
+            <a class="button primary" href="#trilha">Explorar a trilha <span>↓</span></a>
+            <a class="text-link" href="#desafio">Pular para o diagnóstico <span>→</span></a>
+          </div>
+        </div>
+        <div class="hero-map" aria-label="Mapa ilustrativo da descoberta digital">
+          <span class="map-label label-search">BUSCA</span>
+          <span class="map-label label-discovery">DESCOBERTA</span>
+          <span class="map-label label-decision">DECISÃO</span>
+          <div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orb orb-c"></div>
+          <div class="map-line line-a"></div><div class="map-line line-b"></div><div class="map-line line-c"></div>
+          <div class="map-center">SEO<br /><small>em movimento</small></div>
+        </div>
+      </section>
+
+      <section class="intro-strip">
+        <p><span class="dot"></span> A descoberta não é linear. Uma boa estratégia cria caminhos claros para humanos e mecanismos de busca.</p>
+      </section>
+
+      <section class="learning-path section" id="trilha">
+        <div class="section-heading">
+          <div><p class="eyebrow">Aula interativa</p><h2>Uma trilha, seis<br />camadas de decisão.</h2></div>
+          <p>Explore cada tema antes de colocar tudo à prova no desafio final.</p>
+        </div>
+        <div class="module-grid">
+          <article class="module module-featured"><span class="module-number">01</span><div class="module-icon">⌁</div><h3>Busca, descoberta<br />e decisão</h3><p>Entenda como os pontos de contato se combinam até uma escolha.</p><button class="open-module" data-module="journey">Explorar <span>→</span></button></article>
+          <article class="module"><span class="module-number">02</span><div class="module-icon">/{ }</div><h3>Rastreamento<br />e indexação</h3><p>Robots.txt e sitemap.xml: o que os buscadores podem encontrar.</p><button class="open-module" data-module="crawl">Explorar <span>→</span></button></article>
+          <article class="module"><span class="module-number">03</span><div class="module-icon">⇄</div><h3>SEO técnico<br />com propósito</h3><p>Canonical, 301, 404 e 5xx traduzidos em impacto de negócio.</p><button class="open-module" data-module="technical">Explorar <span>→</span></button></article>
+          <article class="module"><span class="module-number">04</span><div class="module-icon">⌘</div><h3>Arquitetura<br />e links internos</h3><p>Construa caminhos: de uma página pilar até o conteúdo específico.</p><button class="open-module" data-module="architecture">Explorar <span>→</span></button></article>
+          <article class="module"><span class="module-number">05</span><div class="module-icon">◎</div><h3>Intenção<br />de busca</h3><p>Informar, navegar, comparar, comprar ou encontrar algo perto.</p><button class="open-module" data-module="intent">Explorar <span>→</span></button></article>
+          <article class="module"><span class="module-number">06</span><div class="module-icon">✦</div><h3>Página e conteúdo<br />de alto valor</h3><p>On-page SEO e originalidade: utilidade que não se copia.</p><button class="open-module" data-module="content">Explorar <span>→</span></button></article>
+        </div>
+      </section>
+
+      <section class="challenge section" id="desafio">
+        <div class="challenge-top">
+          <div><p class="eyebrow">Diagnóstico prático · 25 min</p><h2>Resgate o SEO<br />da Veloce.</h2></div>
+          <p>Uma loja de tênis perdeu visibilidade. Resolva uma missão para cada camada da trilha e receba uma nota geral ao final.</p>
+        </div>
+        <div class="challenge-layout">
+          <aside class="site-status">
+            <div class="status-head"><span>VELOCE / auditoria</span><span id="score">0 pts</span></div>
+            <p class="student-label" id="student-label">Participante: visitante</p>
+            <h3>Saúde orgânica</h3>
+            <div class="metric"><div><span>Rastreamento</span><b id="crawl-score">42%</b></div><i><em id="crawl-bar" style="width:42%"></em></i></div>
+            <div class="metric"><div><span>Indexação</span><b id="index-score">35%</b></div><i><em id="index-bar" style="width:35%"></em></i></div>
+            <div class="metric"><div><span>Estrutura de URLs</span><b id="architecture-score">48%</b></div><i><em id="architecture-bar" style="width:48%"></em></i></div>
+            <div class="metric"><div><span>Relevância</span><b id="relevance-score">30%</b></div><i><em id="relevance-bar" style="width:30%"></em></i></div>
+            <div class="status-note"><span>!</span><p>O painel mostra a saúde projetada da Veloce; sua nota geral considera as 12 missões.</p></div>
+          </aside>
+
+          <div class="challenge-card" id="challenge-card">
+            <div class="challenge-step"><span id="step-label">MISSÃO 1 DE 12</span><span class="step-dots"><i class="active"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+            <div id="question-area"></div>
+            <div class="challenge-footer"><button class="button primary" id="next-question" disabled>Confirmar decisão <span>→</span></button><button class="restart" id="restart">Recomeçar</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="takeaway section">
+        <p class="eyebrow">Para levar da aula</p>
+        <blockquote>SEO não é um conjunto de truques.<br /><em>É a disciplina de tornar valor descobrível.</em></blockquote>
+      </section>
+    </main>
+
+    <dialog id="module-dialog">
+      <button class="dialog-close" aria-label="Fechar">×</button>
+      <div id="module-content"></div>
+    </dialog>
+    <script src="app.js"></script>
+  </body>
+</html>
